@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install flask
-        pip install psutils
+        pip install psutil
 
     - name: Run dashboard script
       run: python monitoring_dashboard/main.py
