@@ -25,4 +25,4 @@ jobs:
         pip install psutil
 
     - name: Run dashboard script
-      run : python monitoring_dashboard\main.py
+      run : python monitoring_dashboard/main.py
