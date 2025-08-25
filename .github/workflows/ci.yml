@@ -2,9 +2,9 @@ name: CI for Performance Dashboard
 
 on:
   push:
-    branches: [ "main" ]    # Runs when you push code to main
+    branches: [ "master" ]    # Runs when you push code to main
   pull_request:
-    branches: [ "main" ]    # Runs when you make a Pull Request to main
+    branches: [ "master" ]    # Runs when you make a Pull Request to main
 
 jobs:
   build-test:
@@ -21,7 +21,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        pip install flask,psutils
 
     - name: Run tests (if any)
       run: |
