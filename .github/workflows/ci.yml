@@ -25,8 +25,4 @@ jobs:
         pip install psutils
 
     - name: Run dashboard script
-      run: python monitoring_dashboard_main.py
-
-    - name: Build Docker image (just for validation, not push)
-      run: |
-        docker build -t monitoring_dashboard .
+      run: python monitoring_dashboard/main.py
