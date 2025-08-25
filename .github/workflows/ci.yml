@@ -25,5 +25,4 @@ jobs:
         pip install psutil
 
     - name: Run dashboard script
-    - name: Creating Docker container
-      run: docker build -t monitoring_dashboard
+      run : python monitoring_dashboard\main.py
