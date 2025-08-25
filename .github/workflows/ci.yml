@@ -24,9 +24,8 @@ jobs:
         pip install flask
         pip install psutils
 
-    - name: Run tests (if any)
-      run: |
-        pytest || echo "No tests yet"
+    - name: Run dashboard script
+      run: python monitoring_dashboard_main.py
 
     - name: Build Docker image (just for validation, not push)
       run: |
