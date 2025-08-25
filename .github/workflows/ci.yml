@@ -30,4 +30,4 @@ jobs:
 
     - name: Build Docker image (just for validation, not push)
       run: |
-        docker build -t perf-dashboard .
+        docker build -t monitoring_dashboard .
